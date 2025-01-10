@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vidéos</title>
   <link rel="stylesheet" href="styles.css">
+  <script>
+    // Désactiver le clic droit sur la page
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+    });
+
+    // Désactiver le glisser-déposer
+    document.addEventListener('dragstart', function(e) {
+        e.preventDefault();
+    });
+  </script>
 </head>
 <body>
   <header>
@@ -13,53 +24,52 @@
   <main>
     <div class="video-grid">
       <p>Vidéo 1</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video1.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
       
       <p>Vidéo 2</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video2.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
       
       <p>Vidéo 3</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video3.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
      
       <p>Vidéo 4</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video4.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
       
       <p>Vidéo 5</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video5.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
       
       <p>Vidéo 6</p>
-
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video6.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
+
       <p>Vidéo 7</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video7.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
      
       <p>Vidéo 8</p>
-      <video controls>
+      <video controlsList="nodownload" controls width="300" oncontextmenu="return false;">
         <source src="video8.mp4" type="video/mp4">
         Votre navigateur ne supporte pas la vidéo.
       </video>
-      
     </div>
   </main>
   <footer>
